@@ -1,0 +1,17 @@
+#parse ('vm/parse/header.vm')
+#commonMacro($id $name $github)
+#commonMacro('a', 'b', 'c')
+
+#@blockMacro('one')
+Block macro is called
+#end
+#@blockMacro('two')
+Block macro is called again
+#end
+
+#macro(localMacro, $arg1, $arg2)
+Argument of local macro: $arg1, $arg2
+#end
+#localMacro($id, 'secondParam')
+#localMacro($favorites)
+#parse ('vm/parse/footer.vm')

@@ -1,0 +1,20 @@
+#parse ('vm/parse/header.vm')
+SchoolName: $name
+Headmaster: $headmaster
+
+$detailInfo.isFirstClass()
+
+Grades:
+#foreach($grade in $grades)
+  GradeName: $grade.name
+  Classes:
+    #foreach($class in $grade.classes)
+      ClassName: $class.name
+      HeadTeacher: $class.headTeacher
+      Students:
+        #foreach($student in $class.students)
+          $student #if($foreach.hasNext),#end
+        #end
+    #end
+#end
+#parse ('vm/parse/footer.vm')

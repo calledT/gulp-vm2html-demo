@@ -1,0 +1,35 @@
+{
+  "name": "gulp-vm2html-demo",
+  "description": "show how2 render velocity template to html by gulp-vm2html",
+  "version": "0.1.0",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": {
+    "name": "calledt",
+    "email": "huanggengtao@gmail.com",
+    "url": "calledt.com"
+  },
+  "repository": "calledt/gulp-vm2html-demo",
+  "keywords": [
+    "velocity",
+    "template",
+    "gulpplugin",
+    "template",
+    "compile",
+    "html",
+    "render",
+    "rendering"
+  ],
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.11.1",
+    "gulp": "^3.9.1",
+    "gulp-load-plugins": "^1.2.0",
+    "gulp-vm2html": "^0.1.0"
+  }
+}
